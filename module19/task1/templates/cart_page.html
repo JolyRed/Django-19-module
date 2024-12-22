@@ -1,0 +1,21 @@
+{% extends 'menu.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+</head>
+<body>
+    {% block pagename %}
+    <h1>Корзина</h1>
+    {% endblock %}
+    {% block menu %}
+        {{ block.super }}
+    {% endblock %}
+    {% block content %}
+    <p>Извините, но ваша корзина пуста.</p>
+    <button onclick="location.href='/'">Назад на главную</button>
+    {% endblock %}
+</body>
+</html>
