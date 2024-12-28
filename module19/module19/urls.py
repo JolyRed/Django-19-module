@@ -23,6 +23,7 @@ urlpatterns = [
     path('', main_page),
     path('cart_page/', cart_page),
     path('shop_page/', shop_page),
-    path('registration_page/', sign_up_by_html)
+    path('registration_page/', sign_up_by_html),
+    path('platform/news/', news_page, name='news_page')
     
 ]
